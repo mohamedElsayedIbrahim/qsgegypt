@@ -1,90 +1,55 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { fadeUp } from "../../appVariants";
 
 const FooterContact: React.FC = () => (
-  <motion.div
-    variants={fadeUp}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true }}
-    custom={0.4}
-  >
-    <h3 className="text-lg font-semibold mb-4 text-navy">Office Locations</h3>
-    <div className="flex">
+  <div>
+    <h3 className="text-lg font-semibold mb-4 text-center text-navy">Office Locations</h3>
 
-      <div className="space-y-4 w-1/2 text-gray-700">
-      <div>
-        <strong>Visit The Office</strong>
+    <div className="flex flex-col md:flex-row gap-6">
+
+      {/* Alexandria Office */}
+      <div className="flex-1 space-y-3 text-gray-700">
+        <strong className="block text-md">Alexandria Office</strong>
+        <p className="text-sm">
+          42 Abdel Latif Al Sufani St., Sidi Jaber<br />
+          Alexandria - Egypt
+        </p>
         <p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-sm hover:text-gold"
-          >
-            107, 1st Floor, Adam Building<br />
-            street Road, city, Country
+          <strong>Tel:</strong>{" "}
+          <a href="tel:+2035443445" className="hover:text-gold">
+            +20 3 544 3445
+          </a>
+        </p>
+        <p>
+          <strong>Email:</strong>{" "}
+          <a href="mailto:inspect@qsgegypt.net" className="hover:text-gold">
+            inspect@qsgegypt.net
           </a>
         </p>
       </div>
 
-      <div>
-        <strong>Phone Inquiry</strong>
+      {/* Cairo Office */}
+      <div className="flex-1 space-y-3 text-gray-700">
+        <strong className="block text-md">Cairo Office</strong>
+        <p className="text-sm">
+          4 A El-Saraya El-Kobra St., Garden City<br />
+          Cairo - Egypt
+        </p>
         <p>
-          <a href="tel:201212341234" className="hover:text-gold">
-            +20 012 1234 1234
+          <strong>Tel:</strong>{" "}
+          <a href="tel:+20227923043" className="hover:text-gold">
+            +20 2 2792 3043
+          </a>
+        </p>
+        <p>
+          <strong>Email:</strong>{" "}
+          <a href="mailto:qsg@qsg-egypt.net" className="hover:text-gold">
+            qsg@qsg-egypt.net
           </a>
         </p>
       </div>
-
-      <div>
-        <strong>Send Email</strong>
-        <p>
-          <a href="mailto:info@mail.com" className="hover:text-gold">
-            info@mail.com
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <div className="space-y-4 w-1/2 text-gray-700">
-      <div>
-        <strong>Visit The Office</strong>
-        <p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-sm hover:text-gold"
-          >
-            107, 1st Floor, Adam Building<br />
-            street Road, city, Country
-          </a>
-        </p>
-      </div>
-
-      <div>
-        <strong>Phone Inquiry</strong>
-        <p>
-          <a href="tel:201212341234" className="hover:text-gold">
-            +20 012 1234 1234
-          </a>
-        </p>
-      </div>
-
-      <div>
-        <strong>Send Email</strong>
-        <p>
-          <a href="mailto:info@mail.com" className="hover:text-gold">
-            info@mail.com
-          </a>
-        </p>
-      </div>
-    </div>
 
     </div>
-  </motion.div>
+  </div>
 );
 
 export default FooterContact;

@@ -11,14 +11,7 @@ import QSGLOGO from '../../../assets/QSG-Egypt.webp';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#f6f6f6] border-t-4 border-[#856130] relative overflow-hidden">
-      {/* Animated gradient overlay */}
-      <motion.div
-        className="absolute inset-0 bg-linear-to-b from-transparent to-[#f6f6f6]/90"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      />
-
+      
       <div className="relative max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
         {/* Logo */}
         <motion.div
@@ -41,7 +34,7 @@ const Footer: React.FC = () => {
         <FooterColumn title="Company" links={companyLinks} delay={0.1} />
         <FooterColumn title="Services" links={servicesLinks} delay={0.2} />
         {/* <FooterColumn title="Quick Links" links={quickLinks} delay={0.3} /> */}
-        <div className="grid-col-2"><FooterContact /></div>
+        <div className="col-span-2"><FooterContact /></div>
       </div>
 
       <FooterBottom />
