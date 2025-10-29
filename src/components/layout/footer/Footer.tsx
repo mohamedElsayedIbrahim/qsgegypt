@@ -5,7 +5,7 @@ import FooterContact from "./FooterContact";
 import FooterBottom from "./FooterBottom";
 import ScrollToTopButton from "./ScrollToTopButton";
 import { fadeUp } from "../../appVariants";
-import { companyLinks, quickLinks, servicesLinks } from "../../../static/footerData";
+import { companyLinks, servicesLinks } from "../../../static/footerData";
 import QSGLOGO from '../../../assets/QSG-Egypt.webp';
 
 const Footer: React.FC = () => {
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
         <FooterColumn title="Company" links={companyLinks} delay={0.1} />
         <FooterColumn title="Services" links={servicesLinks} delay={0.2} />
         {/* <FooterColumn title="Quick Links" links={quickLinks} delay={0.3} /> */}
-        <FooterContact />
+        <div className="grid-col-2"><FooterContact /></div>
       </div>
 
       <FooterBottom />
