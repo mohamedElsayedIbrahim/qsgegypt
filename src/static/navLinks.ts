@@ -19,6 +19,7 @@ export const navLinks = [
     ],
   },
   { label: "Major Clients", href: "#" },
+  { label: "News", href: "#" },
   { label: " Office Locations", href: "#" },
   { label: "Contact Us", href: "#" },
 ];
