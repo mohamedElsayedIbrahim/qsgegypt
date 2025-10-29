@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 // Lazy-loaded subcomponents
 const SectionTitle = lazy(() => import("../../../components/aboutSection/SectionTitle"));
-const StatsList = lazy(() => import("../../../components/aboutSection/StatsList"));
-const MapImage = lazy(() => import("../../../components/aboutSection/MapImage"));
+// const StatsList = lazy(() => import("../../../components/aboutSection/StatsList"));
+// const MapImage = lazy(() => import("../../../components/aboutSection/MapImage"));
 const PatternImages = lazy(() => import("../../../components/aboutSection/PatternImages"));
 
 // Simple fallback loader (can be replaced with shimmer)
@@ -15,11 +15,11 @@ const Loader: React.FC = () => (
 );
 
 const AboutSection: React.FC = () => {
-  const stats = [
-    { value: 26, label: "Years Serving Clients" },
-    { value: 32000, label: "Projects Completed" },
-    { value: 1000, label: "Employees" },
-  ];
+  // const stats = [
+  //   { value: 26, label: "Years Serving Clients" },
+  //   { value: 32000, label: "Projects Completed" },
+  //   { value: 1000, label: "Employees" },
+  // ];
 
   return (
     <section className="relative py-20 bg-off-white overflow-hidden">
@@ -29,7 +29,7 @@ const AboutSection: React.FC = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <Suspense fallback={<Loader />}>
-          <SectionTitle title="QSG Egypt Offices" />
+          <SectionTitle title="Chairman’s Message" />
         </Suspense>
 
         <motion.p
@@ -43,7 +43,7 @@ const AboutSection: React.FC = () => {
           
           <br />
           <br />
-          
+
 For more than 28 years, the Group has established its reputation as a trusted leader in introducing and providing independent third-party inspection services (TPI) , in areas such as trade (buying and selling) revising the specifications conformity in different trade activities , banks and their clients with credit facilities needs , in addition to delivering specialized technical and management consulting.
 
 <br />
