@@ -1,11 +1,10 @@
-// tailwind.config.ts
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
-        colors: {
+      colors: {
         navy: "#1E2A4A",
         gold: "#D4AF37",
         "light-navy": "#2C3A5A",
@@ -16,4 +15,4 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config
