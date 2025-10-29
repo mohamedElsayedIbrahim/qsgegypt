@@ -44,7 +44,7 @@ const AboutSection: React.FC = () => {
           UAE, Iraq, Yemen, Oman and Saudi Arabia.
           <br />
           <br />
-          Dome’s management team in each country is led by experienced nationals
+          QSG’s management team in each country is led by experienced nationals
           with extensive local knowledge and a deep commitment to building
           strong, sustainable and profitable businesses.
         </motion.p>
