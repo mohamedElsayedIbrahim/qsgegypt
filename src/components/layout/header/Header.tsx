@@ -21,7 +21,7 @@ export default function Header() {
     <header
       className={clsx(
         "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-        sticky ? "bg-navy/90 shadow-lg backdrop-blur" : "bg-white text-navy"
+        sticky ? "bg-navy/90 shadow-lg backdrop-blur" : "bg-white"
       )}
     >
       <div className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto">

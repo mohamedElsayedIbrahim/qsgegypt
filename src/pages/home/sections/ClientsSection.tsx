@@ -46,7 +46,7 @@ const ClientsSection: React.FC = () => {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-navy">
             <a href="#" className="hover:text-gold transition-colors">
-              Our Clients
+              Major Clients
             </a>
           </h2>
         </motion.div>
