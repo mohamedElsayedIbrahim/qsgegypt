@@ -10,7 +10,7 @@ const FooterContact: React.FC = () => (
     viewport={{ once: true }}
     custom={0.4}
   >
-    <h3 className="text-lg font-semibold mb-4 text-navy">Head Office</h3>
+    <h3 className="text-lg font-semibold mb-4 text-navy">Office Locations</h3>
     <div className="space-y-4 text-gray-700">
       <div>
         <strong>Visit The Office</strong>

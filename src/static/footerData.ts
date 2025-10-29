@@ -1,20 +1,20 @@
 import type { FooterLink } from "../interfaces/Components";
 
 export const servicesLinks: FooterLink[] = [
-  { label: "Construction & Maintenance", url: "" },
-  { label: "Renewables & Energy Solutions", url: "" },
-  { label: "HSE Consultancy", url: "" },
-  { label: "Supply & Agency", url: "" },
+      { label: "Inspecation & Expediting", url: "#" },
+      { label: "Asset Valuation & Surveying", url: "#" },
+      { label: "Oil, Gas & Power Services (ASME & TPI)", url: "#" },
+      { label: "Feasibility Studies & Consulting Services", url: "#" },
 ];
 
 export const companyLinks: FooterLink[] = [
-  { label: "About Us", url: "" },
-  { label: "Our History", url: "" },
-  { label: "Chairman's Message", url: "" },
-  { label: "Why Choose Us?", url: "" },
-  { label: "Awards & Appreciation", url: "" },
-  { label: "QHSE Policies and CSR", url: "" },
-  { label: "ISO Certificates", url: "" },
+      { label: " Who We Are", url: "#" },
+      { label: "Chairman's Message", url: "#" },
+      { label: "Meet Our Team", url: "#" },
+      { label: "Major Clients", url: "#" },
+      { label: "News", url: "#" },
+      { label: "Contact Us", url: "#" },
+
 ];
 
 export const quickLinks: FooterLink[] = [

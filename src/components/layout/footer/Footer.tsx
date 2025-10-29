@@ -38,9 +38,9 @@ const Footer: React.FC = () => {
           
         </motion.div>
 
-        <FooterColumn title="Services We Provide" links={servicesLinks} delay={0.1} />
-        <FooterColumn title="Company" links={companyLinks} delay={0.2} />
-        <FooterColumn title="Quick Links" links={quickLinks} delay={0.3} />
+        <FooterColumn title="Company" links={companyLinks} delay={0.1} />
+        <FooterColumn title="Services" links={servicesLinks} delay={0.2} />
+        {/* <FooterColumn title="Quick Links" links={quickLinks} delay={0.3} /> */}
         <FooterContact />
       </div>
 
