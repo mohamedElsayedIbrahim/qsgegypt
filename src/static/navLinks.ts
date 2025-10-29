@@ -12,8 +12,8 @@ export const navLinks = [
     label: "Our Services",
     href: "#",
     submenu: [
-      { label: " Inspecation & Expediting", href: "#" },
-      { label: " Asset Valuation & Surveying", href: "#" },
+      { label: "Inspecation & Expediting", href: "#" },
+      { label: "Asset Valuation & Surveying", href: "#" },
       { label: "Oil, Gas & Power Services (ASME & TPI)", href: "#" },
       { label: "Feasibility Studies & Consulting Services", href: "#" },
     ],
