@@ -1,22 +1,24 @@
-import React from "react";
-import Banner from "./sections/Banner";
-import AboutSection from "./sections/AboutSection";
-import ServicesSection from "./sections/ServicesSection";
-import NewsSection from "./sections/NewsSection";
-import MajorProjectsSection from "./sections/MajorProjectsSection";
-import ClientsSection from "./sections/ClientsSection";
+import React, { Suspense } from "react";
+
+// Lazy load sections
+const Banner = React.lazy(() => import("./sections/Banner"));
+const AboutSection = React.lazy(() => import("./sections/AboutSection"));
+const ServicesSection = React.lazy(() => import("./sections/ServicesSection"));
+const MajorProjectsSection = React.lazy(() => import("./sections/MajorProjectsSection"));
+const NewsSection = React.lazy(() => import("./sections/NewsSection"));
+const ClientsSection = React.lazy(() => import("./sections/ClientsSection"));
 
 const Home: React.FC = () => {
-  return <>
-  
-  <Banner />
-  <AboutSection />
-  <ServicesSection />
-  <MajorProjectsSection />
-  <NewsSection/>
-  <ClientsSection />
-  
-  </>;
+  return (
+    <Suspense fallback={<div className="text-center py-16">Loading...</div>}>
+      <Banner />
+      <AboutSection />
+      <ServicesSection />
+      <MajorProjectsSection />
+      <NewsSection />
+      <ClientsSection />
+    </Suspense>
+  );
 };
 
 export default Home;
