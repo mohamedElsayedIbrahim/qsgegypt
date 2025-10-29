@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 const Banner = React.lazy(() => import("./sections/Banner"));
 const AboutSection = React.lazy(() => import("./sections/AboutSection"));
 const ServicesSection = React.lazy(() => import("./sections/ServicesSection"));
-const MajorProjectsSection = React.lazy(() => import("./sections/MajorProjectsSection"));
+// const MajorProjectsSection = React.lazy(() => import("./sections/MajorProjectsSection"));
 const NewsSection = React.lazy(() => import("./sections/NewsSection"));
 const ClientsSection = React.lazy(() => import("./sections/ClientsSection"));
 
@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       <AboutSection />
       <ServicesSection />
       <ClientsSection />
-      <MajorProjectsSection />
+      {/* <MajorProjectsSection /> */}
       <NewsSection />
     </Suspense>
   );

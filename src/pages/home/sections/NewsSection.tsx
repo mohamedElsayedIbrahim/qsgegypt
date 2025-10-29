@@ -37,7 +37,7 @@ const NewsSection: React.FC = () => {
               href="https://www.domeint.com/news"
               className="hover:text-gold transition-colors"
             >
-              Recently <br /> Added News
+              News & Updates
             </a>
           </h2>
           <div className="flex justify-center gap-2 mt-4">
