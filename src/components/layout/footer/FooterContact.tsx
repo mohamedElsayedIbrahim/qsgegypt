@@ -16,13 +16,13 @@ const FooterContact: React.FC = () => (
         <strong>Visit The Office</strong>
         <p>
           <a
-            href="https://goo.gl/maps/N7J2NvqnWtpHn1CP9"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-sm hover:text-gold"
           >
-            107, 1st Floor, Spectrum Building<br />
-            Al Qataiyat Road, Dubai, UAE
+            107, 1st Floor, Adam Building<br />
+            street Road, city, Country
           </a>
         </p>
       </div>
@@ -30,8 +30,8 @@ const FooterContact: React.FC = () => (
       <div>
         <strong>Phone Inquiry</strong>
         <p>
-          <a href="tel:97143366144" className="hover:text-gold">
-            +971 4 3366144
+          <a href="tel:201212341234" className="hover:text-gold">
+            +20 012 1234 1234
           </a>
         </p>
       </div>
@@ -39,8 +39,8 @@ const FooterContact: React.FC = () => (
       <div>
         <strong>Send Email</strong>
         <p>
-          <a href="mailto:dome@domeint.com" className="hover:text-gold">
-            dome@domeint.com
+          <a href="mailto:info@mail.com" className="hover:text-gold">
+            info@mail.com
           </a>
         </p>
       </div>

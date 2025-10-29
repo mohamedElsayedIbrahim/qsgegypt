@@ -16,9 +16,9 @@ const Loader: React.FC = () => (
 
 const AboutSection: React.FC = () => {
   const stats = [
-    { value: "26", label: "Years Serving Clients" },
-    { value: "32,000+", label: "Projects Completed" },
-    { value: "1,000+", label: "Employees" },
+    { value: 26, label: "Years Serving Clients" },
+    { value: 32000, label: "Projects Completed" },
+    { value: 1000, label: "Employees" },
   ];
 
   return (
@@ -29,7 +29,7 @@ const AboutSection: React.FC = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <Suspense fallback={<Loader />}>
-          <SectionTitle title="Dome Group Offices" />
+          <SectionTitle title="QSG Egypt Offices" />
         </Suspense>
 
         <motion.p

@@ -12,8 +12,8 @@ const Home: React.FC = () => {
   <Banner />
   <AboutSection />
   <ServicesSection />
-  <NewsSection/>
   <MajorProjectsSection />
+  <NewsSection/>
   <ClientsSection />
   
   </>;

@@ -15,23 +15,32 @@ const ProjectContent: React.FC<ProjectContentProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="text-white"
+      className="text-navy"
     >
+      {/* Category Link */}
       <a
         href={categoryLink}
-        className="text-sm uppercase tracking-wide text-yellow-400 hover:underline"
+        className="text-sm uppercase tracking-wide text-gold hover:text-navy transition-colors"
       >
         {category}
       </a>
 
-      <h3 className="text-2xl font-semibold mt-2 mb-3">{title}</h3>
-      <p className="text-gray-200 mb-4">{description}</p>
+      {/* Project Title */}
+      <h3 className="text-2xl font-semibold mt-2 mb-3 text-navy">
+        {title}
+      </h3>
 
+      {/* Description */}
+      <p className="text-medi-gray)] mb-4 leading-relaxed">
+        {description}
+      </p>
+
+      {/* Read More Button */}
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block px-5 py-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black rounded transition-all duration-300"
+        className="inline-block px-5 py-2 border border-gold text-gold rounded hover:bg-gold hover:text-navy transition-all duration-300"
       >
         Read More →
       </a>

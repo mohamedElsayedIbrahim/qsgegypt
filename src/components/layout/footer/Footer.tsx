@@ -6,6 +6,7 @@ import FooterBottom from "./FooterBottom";
 import ScrollToTopButton from "./ScrollToTopButton";
 import { fadeUp } from "../../appVariants";
 import { companyLinks, quickLinks, servicesLinks } from "../../../static/footerData";
+import QSGLOGO from '../../../assets/QSG-Egypt.webp';
 
 const Footer: React.FC = () => {
   return (
@@ -27,18 +28,14 @@ const Footer: React.FC = () => {
           viewport={{ once: true }}
           custom={0}
         >
-          <a href="https://www.domeint.com">
+          <a href="#">
             <img
-              src="https://www.domeint.com/data/logo/logo/dome-logo.png"
-              alt="Dome Logo"
-              className="mb-4 max-h-14"
+              src={QSGLOGO}
+              alt="QSG EGYPT"
+              className="mb-4 max-h-50"
             />
           </a>
-          <img
-            src="https://www.domeint.com/templates/project/image/BV_3Certification_cb58bb1b7a77867b2b4e7618bf76aee4.png"
-            alt="Certification"
-            className="max-h-16"
-          />
+          
         </motion.div>
 
         <FooterColumn title="Services We Provide" links={servicesLinks} delay={0.1} />

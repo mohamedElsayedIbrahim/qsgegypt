@@ -21,5 +21,4 @@ export const navLinks = [
   { label: "Major Clients", href: "#" },
   { label: " Office Locations", href: "#" },
   { label: "Contact Us", href: "#" },
-  { label: "Careers", href: "#" },
 ];

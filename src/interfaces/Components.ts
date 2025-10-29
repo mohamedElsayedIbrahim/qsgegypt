@@ -82,3 +82,23 @@ export interface FooterColumnProps {
   links: FooterLink[];
   delay?: number;
 }
+
+export interface StatItem {
+  value: number;
+  label: string;
+}
+
+export interface StatsListProps {
+  stats: StatItem[];
+}
+
+export interface StatCardProps {
+  value: number;
+  label: string;
+  delay: number;
+}
+
+export interface FooterLink {
+  label: string;
+  url: string;
+}
