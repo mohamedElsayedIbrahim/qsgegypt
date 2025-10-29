@@ -15,7 +15,7 @@ const ServicesSection: React.FC = () => {
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative container mx-auto px-6">
-        <ServicesHeader title="Services We Provide" />
+        <ServicesHeader title="Our Services" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
