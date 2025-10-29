@@ -10,7 +10,7 @@ const FooterContact: React.FC = () => (
       <div className="flex-1 space-y-3 text-gray-700">
         <strong className="block text-md">Alexandria Office</strong>
         <p className="text-sm">
-          42 Abdel Latif Al Sufani St., Sidi Jaber<br />
+          42 Abdel Latif Al Sufani St., <br />Sidi Jaber<br />
           Alexandria - Egypt
         </p>
         <p>
@@ -31,7 +31,7 @@ const FooterContact: React.FC = () => (
       <div className="flex-1 space-y-3 text-gray-700">
         <strong className="block text-md">Cairo Office</strong>
         <p className="text-sm">
-          4 A El-Saraya El-Kobra St., Garden City<br />
+          4 A El-Saraya El-Kobra St., <br />Garden City<br />
           Cairo - Egypt
         </p>
         <p>
