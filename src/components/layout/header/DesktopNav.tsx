@@ -9,7 +9,7 @@ export default function DesktopNav() {
           <a
             href={item.href}
             onClick={(e) => item.submenu && e.preventDefault()}
-            className="text-off-white hover:text-gold font-medium flex items-center gap-1"
+            className="hover:text-gold font-medium flex items-center gap-1"
           >
             {item.label}
             {item.submenu && <ChevronDown size={16} />}
