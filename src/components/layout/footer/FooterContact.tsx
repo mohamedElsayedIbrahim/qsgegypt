@@ -6,6 +6,27 @@ const FooterContact: React.FC = () => (
 
     <div className="flex flex-col md:flex-row gap-6">
 
+{/* Cairo Office */}
+      <div className="flex-1 space-y-3 text-gray-700">
+        <strong className="block text-md">Cairo Office</strong>
+        <p className="text-sm">
+          4 A El-Saraya El-Kobra St., <br />Garden City<br />
+          Cairo - Egypt
+        </p>
+        <p>
+          <strong>Tel:</strong>{" "}
+          <a href="tel:+20227923043" className="hover:text-gold">
+            +20 2 2792 3043
+          </a>
+        </p>
+        <p>
+          <strong>Email:</strong>{" "}
+          <a href="mailto:qsg@qsg-egypt.net" className="hover:text-gold">
+            qsg@qsg-egypt.net
+          </a>
+        </p>
+      </div>
+      
       {/* Alexandria Office */}
       <div className="flex-1 space-y-3 text-gray-700">
         <strong className="block text-md">Alexandria Office</strong>
@@ -27,26 +48,7 @@ const FooterContact: React.FC = () => (
         </p>
       </div>
 
-      {/* Cairo Office */}
-      <div className="flex-1 space-y-3 text-gray-700">
-        <strong className="block text-md">Cairo Office</strong>
-        <p className="text-sm">
-          4 A El-Saraya El-Kobra St., <br />Garden City<br />
-          Cairo - Egypt
-        </p>
-        <p>
-          <strong>Tel:</strong>{" "}
-          <a href="tel:+20227923043" className="hover:text-gold">
-            +20 2 2792 3043
-          </a>
-        </p>
-        <p>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:qsg@qsg-egypt.net" className="hover:text-gold">
-            qsg@qsg-egypt.net
-          </a>
-        </p>
-      </div>
+      
 
     </div>
   </div>
