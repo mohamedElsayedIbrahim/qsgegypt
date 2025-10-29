@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#f6f6f6] border-t-4 border-[#856130] relative overflow-hidden">
       
-      <div className="relative max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="relative max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
         {/* Logo */}
         <div className="flex justify-center sm:justify-start">
           <a href="#">
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         <FooterColumn title="Services" links={servicesLinks} />
 
         {/* Contact */}
-        <div className="sm:col-span-2 lg:col-span-1">
+        <div className="sm:col-span-2 lg:col-span-2">
           <FooterContact />
         </div>
       </div>
