@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState } from "react"
 import clsx from "clsx"
-import { navLinks } from "../../static/navLinks"
+import { navLinks } from "../../../static/navLinks"
 
 interface MobileNavProps {
   isOpen: boolean

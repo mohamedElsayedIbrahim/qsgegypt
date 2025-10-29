@@ -66,3 +66,19 @@ export interface NewsProps {
   news: NewsItem;
   index?:number
 }
+
+export interface Client {
+  img: string;
+  alt: string;
+}
+
+export interface FooterLink {
+  label: string;
+  url: string;
+}
+
+export interface FooterColumnProps {
+  title: string;
+  links: FooterLink[];
+  delay?: number;
+}

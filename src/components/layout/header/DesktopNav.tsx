@@ -1,5 +1,5 @@
 import { ChevronDown } from "lucide-react"
-import { navLinks } from "../../static/navLinks"
+import { navLinks } from "../../../static/navLinks"
 
 export default function DesktopNav() {
   return (
