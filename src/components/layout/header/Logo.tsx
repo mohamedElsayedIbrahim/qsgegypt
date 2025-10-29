@@ -6,12 +6,12 @@ export default function Logo() {
       <img
         src={SiteLogo}
         alt="QSG Egypt"
-        className="hidden dark:block h-20 w-auto"
+        className="hidden dark:block h-30 w-auto"
       />
       <img
         src={SiteLogo}
         alt="QSG Egypt"
-        className="block dark:hidden h-20 w-auto"
+        className="block dark:hidden h-30 w-auto"
       />
     </a>
   )
