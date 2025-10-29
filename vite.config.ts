@@ -1,9 +1,9 @@
-import { defineConfig } from "vite"
-import react from "@vitejs/plugin-react-swc"
-import tailwindcss from "@tailwindcss/vite"
-import svgr from "vite-plugin-svgr"
-import compression from "vite-plugin-compression"
-import viteImagemin from "vite-plugin-imagemin"
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import tailwindcss from "@tailwindcss/vite";
+import svgr from "vite-plugin-svgr";
+import compression from "vite-plugin-compression";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer"; // ✅ correct working plugin
 
 export default defineConfig({
   plugins: [
@@ -16,7 +16,6 @@ export default defineConfig({
       algorithm: "gzip",
       ext: ".gz",
       threshold: 10240,
-      deleteOriginFile: false,
     }),
 
     // 🔥 Brotli compression
@@ -24,24 +23,16 @@ export default defineConfig({
       algorithm: "brotliCompress",
       ext: ".br",
       threshold: 10240,
-      deleteOriginFile: false,
     }),
 
-    // 🖼️ Image optimization (with AVIF fix)
-    viteImagemin({
-      gifsicle: { optimizationLevel: 7, interlaced: false },
-      optipng: { optimizationLevel: 7 },
-      mozjpeg: { quality: 80 },
-      pngquant: { quality: [0.7, 0.9], speed: 3 },
-      svgo: {
-        plugins: [
-          { name: "removeViewBox", active: false },
-          { name: "removeEmptyAttrs", active: true },
-        ],
-      },
+    // 🖼️ Image optimization (modern + maintained)
+    ViteImageOptimizer({
+      png: { quality: 80 },
+      jpeg: { quality: 80 },
+      jpg: { quality: 80 },
       webp: { quality: 80 },
-      // 👇 bypass TypeScript check (still works in runtime)
-      ...( { avif: { quality: 50 } } as any ),
+      avif: { quality: 60 },
+      svg: { multipass: true },
     }),
   ],
 
@@ -83,4 +74,4 @@ export default defineConfig({
       "@": "/src",
     },
   },
-})
+});
