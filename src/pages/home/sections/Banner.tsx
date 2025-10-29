@@ -39,7 +39,7 @@ export default function Banner() {
       </AnimatePresence>
 
       {/* Dots Navigation */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
         {slides.map((_, i) => (
           <button
             key={i}
@@ -49,7 +49,7 @@ export default function Banner() {
             } transition-all`}
           />
         ))}
-      </div>
+      </div> */}
     </section>
   )
 }
