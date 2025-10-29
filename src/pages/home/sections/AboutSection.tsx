@@ -39,23 +39,31 @@ const AboutSection: React.FC = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          We have rapidly expanded our area of operations through the
-          establishment of a network of strategically located offices in the
-          UAE, Iraq, Yemen, Oman and Saudi Arabia.
+          At QSG, we are proud of the diversity of our business portfolio, the global reach of our operations, and—most importantly—the strength, capabilities and experience of our team and calibers.
+          
           <br />
           <br />
-          QSG’s management team in each country is led by experienced nationals
-          with extensive local knowledge and a deep commitment to building
-          strong, sustainable and profitable businesses.
+          
+For more than 28 years, the Group has established its reputation as a trusted leader in introducing and providing independent third-party inspection services (TPI) , in areas such as trade (buying and selling) revising the specifications conformity in different trade activities , banks and their clients with credit facilities needs , in addition to delivering specialized technical and management consulting.
+
+<br />
+<br />
+
+Our people’s passion, commitment, dedication and expertise, supported by visionary leadership, have enabled us to consistently deliver excellence and go beyond our clients’ expectations.
+
+<br />
+<br />
+Leading this Group is both an honor and a responsibility. Together, we will build on our legacy, embrace innovation, and drive sustainable growth as we move confidently toward the future.
+
         </motion.p>
 
-        <Suspense fallback={<Loader />}>
+        {/* <Suspense fallback={<Loader />}>
           <StatsList stats={stats} />
         </Suspense>
 
         <Suspense fallback={<Loader />}>
           <MapImage />
-        </Suspense>
+        </Suspense> */}
       </div>
     </section>
   );
