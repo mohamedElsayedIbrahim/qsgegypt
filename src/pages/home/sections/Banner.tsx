@@ -6,7 +6,7 @@ import VideoApp from "../../../assets/egypt.mp4"
 const slides = [
   {
     videoSrc: VideoApp,
-    title: "A diversified Group serving clients across the Gulf since 1997",
+    title: " Quality services groups (QSG) since 1997",
     buttonText: "About Us",
     buttonLink: "#",
   },
