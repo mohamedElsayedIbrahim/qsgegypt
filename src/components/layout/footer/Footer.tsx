@@ -1,10 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 import FooterColumn from "./FooterColumn";
 import FooterContact from "./FooterContact";
 import FooterBottom from "./FooterBottom";
 import ScrollToTopButton from "./ScrollToTopButton";
-import { fadeUp } from "../../appVariants";
 import { companyLinks, servicesLinks } from "../../../static/footerData";
 import QSGLOGO from '../../../assets/QSG-Egypt.webp';
 
@@ -12,15 +10,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#f6f6f6] border-t-4 border-[#856130] relative overflow-hidden">
       
-      <div className="relative max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div className="relative max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Logo */}
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={0}
-        >
+        <div className="flex justify-center sm:justify-start">
           <a href="#">
             <img
               src={QSGLOGO}
@@ -28,13 +20,16 @@ const Footer: React.FC = () => {
               className="mb-4 max-h-50"
             />
           </a>
-          
-        </motion.div>
+        </div>
 
-        <FooterColumn title="Company" links={companyLinks} delay={0.1} />
-        <FooterColumn title="Services" links={servicesLinks} delay={0.2} />
-        {/* <FooterColumn title="Quick Links" links={quickLinks} delay={0.3} /> */}
-        <div className="col-span-2"><FooterContact /></div>
+        {/* Columns */}
+        <FooterColumn title="Company" links={companyLinks} />
+        <FooterColumn title="Services" links={servicesLinks} />
+
+        {/* Contact */}
+        <div className="sm:col-span-2 lg:col-span-1">
+          <FooterContact />
+        </div>
       </div>
 
       <FooterBottom />
