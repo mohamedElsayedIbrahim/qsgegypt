@@ -30,7 +30,7 @@ export default function Header() {
 
         {/* Mobile Button */}
         <button
-          className="lg:hidden text-off-white"
+          className="lg:hidden text-navy"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X size={28} /> : <Menu size={28} />}
