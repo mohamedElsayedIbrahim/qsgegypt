@@ -59,7 +59,7 @@ const ServiceCard: React.FC<SeriveProps> = ({ service, index }) => {
       </div>
 
       <div className="bg-white py-4 text-center">
-        <h4 className="text-gray-900 font-semibold">{service.title}</h4>
+        <h4 className="text-gray-900 font-semibold text-[14px]">{service.title}</h4>
       </div>
     </motion.div>
   );
