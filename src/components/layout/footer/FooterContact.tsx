@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterContact: React.FC = () => (
   <div>
-    <h3 className="text-lg font-semibold mb-4 text-center text-navy">Office Locations</h3>
+    <h3 className="text-lg font-semibold mb-4 text-navy">Office Locations</h3>
 
     <div className="flex flex-col md:flex-row gap-6">
 
